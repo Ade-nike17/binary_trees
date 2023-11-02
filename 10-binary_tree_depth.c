@@ -11,13 +11,13 @@
 
 size_t binary_tree_depth(const binary_tree_t *tree)
 {
+	/* Initialize a varieable to keep track of the depth */
+	size_t depth = 0;
+
 	if (tree == NULL)
 	{
 		return (0);
 	}
-
-	/* Initialize a variable to keep track of the depth */
-	size_t depth = 0;
 
 	/* Traverse up the tree from the given node to the root */
 	while (tree->parent != NULL)
