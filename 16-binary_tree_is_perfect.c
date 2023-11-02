@@ -42,6 +42,11 @@ int binary_tree_is_perfect(const binary_tree_t *tree)
 		return (0);
 	}
 
+	if (tree->left == NULL && tree->right == NULL)
+	{
+		return (0);
+	}
+
 	/* Calculate the number of nodes in the tree */
 	for (i = 0; i < height; i++)
 	{
